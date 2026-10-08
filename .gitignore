@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Data stays out of git: the raw ZIP is 68 MB and the row-level files name real
+# lifters. data/README.md explains how to get the frozen snapshot.
+data/*
+!data/README.md
+*.zip
+*.csv.gz
