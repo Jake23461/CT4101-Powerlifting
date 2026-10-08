@@ -44,11 +44,32 @@ guessing "success" every time.
 
 Age is missing for 73,444 lifts (15.9%), which I'll need to deal with before modelling.
 
+## Columns I'm using
+
+I only want to use things that are known before the third deadlift happens.
+
+| Column | Type | Units / values | What it means | Known before the 3rd deadlift? |
+|---|---|---|---|---|
+| Sex | category | M, F, Mx (only 5 Mx rows) | The sex category the lifter competed in | Yes |
+| Age | number | years, often x.5 (approximate) | Age at the meet, missing for 15.9% | Yes |
+| BodyweightKg | number | kg | Weigh-in bodyweight | Yes |
+| Deadlift1Kg | signed number | kg, negative = missed | First attempt: the size is the weight, the sign is whether they made it | Yes |
+| Deadlift2Kg | signed number | kg, negative = missed | Second attempt, stored the same way | Yes |
+| Deadlift3Kg | signed number | kg, negative = missed | The weight is announced before the lift, but the sign is the result, so this is what I'm predicting and I never use it as an input | Weight yes, result no |
+| Name | text | | I only use this to keep each lifter on one side of the train/test split, never as an input | Not an input |
+
+I never use Deadlift4Kg, Best3DeadliftKg, TotalKg, Place, Dots, Wilks, Glossbrenner or
+Goodlift as inputs, because they're only known after the lift, so they'd give the answer away.
+
+Next week I'll build the actual model inputs from these columns: the three attempt weights,
+whether attempts 1 and 2 were made, the jump from attempt 2 to 3 (in kg and %), and the
+third attempt's weight divided by bodyweight.
+
 ## Things that look odd
 
 I haven't removed these yet. I'll decide what to do with them next week.
 
-- 344 lifters listed as younger than 10
+- 344 rows where the lifter is listed as younger than 10
 - 2 third attempts heavier than 450 kg
 - 113 bodyweights under 30 kg or over 250 kg
 - 329 cases where the same person seems to appear more than once at the same meet (659 rows)
