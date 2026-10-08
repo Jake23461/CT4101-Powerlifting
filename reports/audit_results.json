@@ -1,0 +1,36 @@
+{
+  "run_utc": "2026-10-08T15:36:50.600582+00:00",
+  "python": "3.13.15",
+  "pandas": "3.0.5",
+  "numpy": "2.5.3",
+  "zip_sha256": "f4b65d165f3677cd6f063469a2ab64458caea3b19161a2c87fcf0574aedbadc7",
+  "csv_member": "openipf-2026-10-03/openipf-2026-10-03-199bb416.csv",
+  "counts": {
+    "raw_rows": 1529372,
+    "SBD": 1135955,
+    "SBD_Raw": 624937,
+    "three_attempts_present": 481386,
+    "valid_bodyweight": 481248,
+    "valid_nonzero_attempts": 481248,
+    "exact_duplicates_removed": 196,
+    "cross_division_duplicates_removed": 18563,
+    "final_unique_recorded_performances": 462489,
+    "age_below_10": 344,
+    "third_attempt_above_450kg": 2,
+    "bodyweight_below_30_or_above_250": 113,
+    "repeated_identity_meet_rows": 659,
+    "repeated_identity_meet_groups": 329,
+    "third_attempt_same_load_as_second": 38058
+  },
+  "final": {
+    "success": 281925,
+    "failure": 180564,
+    "success_pct": 60.958206573561746,
+    "unique_lifters": 182281,
+    "federations": 104,
+    "date_min": "1973-11-09",
+    "date_max": "2026-09-27",
+    "age_missing": 73444,
+    "age_missing_pct": 15.880161474110736
+  }
+}
