@@ -1,0 +1,10 @@
+{
+  "start_rows": 462489,
+  "removed_repeated_identity_meet": 659,
+  "removed_third_attempt_above_450kg": 2,
+  "kept_age_below_10": 344,
+  "kept_bodyweight_below_30_or_above_250": 113,
+  "final_rows": 461828,
+  "success": 281513,
+  "success_pct": 60.956243449942406
+}
