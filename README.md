@@ -20,7 +20,7 @@ On Windows, if PowerShell says running scripts is disabled, run
 
 ### 2. Get the data
 
-Put `openipf-latest.zip` in `data/raw/` without unzipping it. [data/README.md](data/README.md)
+Download `openipf-latest.zip` from the link in [data/README.md](data/README.md) and put it in `data/raw/` without unzipping it. [data/README.md](data/README.md)
 explains where it comes from and which exact snapshot I used.
 
 ### 3. Run the data audit
