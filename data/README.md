@@ -2,7 +2,7 @@
 
 This project uses one frozen snapshot of the OpenPowerlifting IPF-affiliate bulk CSV.
 The data files are not in this repository: the ZIP is 68 MB, and the CSV contains
-lifters' names. To be confirmed how to send the Zipped data, since downloading newest version may contain updated data
+lifters' names. The download link now gives a newer build, so it won't match this snapshot. If you can't get this exact file, email me and I'll share it. @J.hanrahan7@universityofgalway.ie
 
 ## Source
 
