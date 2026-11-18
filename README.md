@@ -15,6 +15,8 @@ source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+This installs pandas, NumPy, scikit-learn, matplotlib (for the figures in notebook 04) and Jupyter.
+
 On Windows, if PowerShell says running scripts is disabled, run
 `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` first and then activate again.
 
@@ -43,6 +45,7 @@ to bottom in this order:
 | `notebooks/01_data.ipynb` | Checks the data, runs the audit again, cleans the data and builds the model inputs | a couple of minutes (it reruns the audit) |
 | `notebooks/02_evaluation_design.ipynb` | Splits the data by lifter and sets up the 5 folds | under a minute |
 | `notebooks/03_baselines.ipynb` | Scores the two baselines and saves `reports/baseline_results.csv` | about a minute |
+| `notebooks/04_models.ipynb` | Tunes logistic regression and a decision tree, compares them with the baselines, and saves `reports/model_results.csv`, `reports/error_analysis.csv` and the figures in `reports/figures/` | about 3 minutes |
 
 The very first time scikit-learn is imported after installing it can take a few extra
 minutes on Windows. After that the times above apply.
@@ -51,8 +54,9 @@ minutes on Windows. After that the times above apply.
 
 ```text
 data/README.md      where the data comes from and where to put it
-src/                reusable code (file paths, audit, cleaning, features, evaluation, baselines)
-notebooks/          the notebooks, run in order 01, 02, 03
+src/                reusable code (file paths, audit, cleaning, features, evaluation, baselines, models)
+notebooks/          the notebooks, run in order 01, 02, 03, 04
 reports/            aggregate results only, with no names or row-level data
+reports/figures/    the PNG figures saved by notebook 04
 ASSISTANCE.md       how I used AI tools and other help
 ```
