@@ -1,0 +1,7 @@
+model,balanced_accuracy,accuracy,roc_auc,precision_made,recall_made,f1_made,precision_missed,recall_missed,f1_missed
+always made,0.5,0.6069,0.5,0.6069,1.0,0.7554,0.0,0.0,0.0
+second-attempt rule,0.5557,0.6362,0.5557,0.6368,0.9323,0.7567,0.6314,0.1791,0.279
+logistic regression,0.6116,0.621,0.656,0.7006,0.6558,0.6775,0.5164,0.5673,0.5406
+decision tree,0.6183,0.6178,0.6638,0.7149,0.6159,0.6617,0.5114,0.6207,0.5608
+random forest,0.6222,0.6259,0.6699,0.7142,0.6396,0.6748,0.5208,0.6048,0.5597
+gradient boosting,0.622,0.6251,0.6706,0.7146,0.6365,0.6733,0.5198,0.6076,0.5603
