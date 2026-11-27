@@ -25,6 +25,7 @@ English.
 - using the test set once, at the end, with the final choice written down beforehand
 - the follow-up analyses: permutation importance, performance by sex and age band, and
   performance by meet year
+- I also used AI to help assist with the layout flow of my report and to make sure I was hitting all the key points I wanted to mention.
 
 Claude Code implemented the two ensemble pipelines in src/models.py to these specifications, I wrote up the notebook, and used claude code to correct any mistakes made and run the notebook to catch any errors. I reviewed the results and revised where I disagreed or something was missing. For example, I had it frame separate
 thresholds for women and men as a fairness question rather than a simple fix, propose
